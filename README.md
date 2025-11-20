@@ -1,5 +1,8 @@
 🎨 Meu Portfólio — Caio Ribeiro
 
+![Uploading Animação.gif…]()
+
+
 Um espaço digital criado para apresentar meus projetos, habilidades e trajetória como desenvolvedor.
 Interface moderna, conteúdo organizado e navegação simples.
 
@@ -85,5 +88,6 @@ Caio Ribeiro
 GitHub: https://github.com/devribeiro-caio
 
 LinkedIn: https://www.linkedin.com/in/caio-ribeiro-647729302/
+
 
 
