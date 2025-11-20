@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Ribeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="particulas"></div>
+  
+  
+  <nav class="navegacao">
+      <ul class="menu">
+      <li>
+        <a href="#início" class="menu-link">Início</a>
+
+      </li>
+       
+      <li>
+        <a href="#sobre" class="menu-link">Sobre</a>
+
+      </li><li>
+        <a href=#projetos class="menu-link">Projetos</a>
+
+      </li>
+      <li>
+        <a href="#contato" class="menu-link">Contato</a>
+    
+
+      </li>
+      <li>
+        <a href="##skills" class="menu-link">Skills</a>
+
+      </li>
+      </ul>
+
+    </nav>
+
+    <main id="Início" class="cabecalho">
+       
+            <img src="./img/caioribeiro.jpg" alt="Foto de Caio Ribeiro" class="foto-perfil">
+            <h1>Caio Ribeiro</h1>
+            <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack</p>
+            
+    </main>
+    
+    <section id="sobre" class="Sobre">
+      <h2 class="sobre-titulo">Sobre Mim</h2>
+      <div class="sobre-caixa">
+      <p class="sobre-paragrafo">Olá, Sou um Desenvolvedor Full Stack apaixonado por transformar ideias em soluções digitais completas, eficientes e escaláveis. Trabalho tanto no front-end quanto no back-end, sempre buscando unir boa experiência do usuário, código limpo e arquitetura bem estruturada.
+
+Possuo experiência com desenvolvimento web, criação de APIs, integração de sistemas e construção de interfaces modernas. Gosto de aprender novas tecnologias, resolver problemas e participar ativamente de todas as etapas do desenvolvimento — desde o planejamento até a entrega final.
+
+Meu objetivo é criar aplicações que façam sentido para as pessoas, que sejam rápidas, intuitivas e de fácil manutenção. Acredito na importância da colaboração, da melhoria contínua e de escrever código que ajude a construir produtos de qualidade.</p>
+      </div>
+    </section">
+
+    <section id="projetos" class="Projetos">
+      <h2 class="projetos-titulo">Meus Projetos</h2>
+      <div class="projetos-caixa">
+        <div class="projeto-card">
+          <img src="./img/projetobanco.png" alt="Projeto 1" class="projetos-imagem">
+          <div class="caixa-texto-projeto">
+          <h3 class="info-projetos">Banco Digital</h3>
+          <p class="paragrafo-projetos">um sistema bancário de terminal criado com Node.js. Permite consultar saldo, realizar saques, depósitos e transferências via linha de comando.</p>
+        </div>  
+        </div>
+         <div class="projeto-card">
+          <img src="./img/como-funciona-nova-lei-da-gorjeta.jpg" alt="Projeto 2" class="projetos-imagem">
+          <div class="caixa-texto-projeto">    
+          <h3 class="info-projetos">Calculadora de Gorjetas</h3>
+          <p class="paragrafo-projetos">uma aplicação web desenvolvida com HTML, CSS e JavaScript que ajuda os usuários a calcular gorjetas de forma rápida e fácil.</p>
+        </div>    
+        </div>
+        </div>
+          </div>
+    </section>
+
+    <section id="skills" class="Skills">
+      <h2 class="skills-titulo">Minhas Skills</h2>
+      <div class="skills-caixa">
+        <div class="skill-card">
+          <h3 class="skill-nome">JAVA</h3>
+
+    
+    <section id="contato" class="Contatos">
+      <h2 class="contato-titulo">Entre em Contato</h2>
+      ,<form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+      <div class="grupo-form">
+        <input placeholder="Nome" class="campo-form" id="Nome">
+        </div>
+        <div class="grupo-form">
+      <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="Mensagem"></textarea>
+      </div>
+      <button type="submit" class="botao-form">Enviar WhatsApp</button>
+      </form>
+       
+
+
+   </section>
+
+   <flooter class="rodape">
+    <p class="rodape-texto">© 2024 Caio Ribeiro. Todos os direitos reservados.</p>
+    </flooter>
+
+   <script>
+
+    function enviarWhats(event){
+      event.preventDefault();
+      
+    const nome= document.getElementById('Nome');
+    const mensagem= document.getElementById('Mensagem');
+    const telefone = "5511981973298";
+
+    const texto = `Olá, meu nome é ${nome}, gostaria de falar sobre ${mensagem}.`;
+
+    const msgFormatada = encodeURIComponent (texto); 
+    
+    const url = `https://whatsa.me/${telefone}?text=${msgFormatada}`;
+   
+   window.open(url, '_blank ');
+    }
+    
+    const nome= document.getElementById('Nome').value;
+    const mensagem= document.getElementById('Mensagem').value;
+    const telefone = "5511981973298";
+
+    const texto = `Olá, meu nome é ${nome}, gostaria de falar sobre ${mensagem}.`;
+
+    const msgFormatada = encodeURIComponent (texto); 
+    
+    const url = `https://wame/${telefone}?text=${msgFormatada}`;
+
+    console.log(url);
+   
+   window.open(url, '_blank ');
+   </script>
+
+</body>
+</html>
